@@ -9,6 +9,7 @@
 - [Principales dépendances Symfony](#principales-dépendances-symfony)
 - [Prérequis](#prérequis)
 - [Installation](#installation)
+- [Contributeurs](#contributeurs)
 
 <br>
 
@@ -138,3 +139,8 @@ Avant de commencer l'installation et l'utilisation de ce projet, assurez-vous qu
 5. Créer la base de données en exécutant les migrations Doctrine avec `docker-compose exec php php bin/console doctrine:migrations:migrate`.
 
 Une fois ces étapes terminées, vous devriez avoir votre projet Symfony exécutant localement avec Docker. Vous pouvez accéder à votre application via http://localhost. Le phpMyAdmin est également accessible via http://localhost:8080.
+
+<br>
+
+## Contributeurs
+Kévin Terrier, Curtis Marty-Jackson, Alexis Carrere, Adam Queval.
