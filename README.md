@@ -10,10 +10,14 @@
 - [Installation](#installation)
 
 ## Introduction
-"reCycle" est une plateforme permettant aux utilisateurs d’échanger des biens et services sans impliquer d’argent. De cette manière, ils peuvent donner une seconde vie à des objets dont ils n’ont plus besoin, et ceux qui n’en ont pas à distribuer peuvent toujours s’impliquer en proposant leurs compétences à travers des services.
+"reCycle" est une plateforme permettant aux utilisateurs d’échanger des biens et services sans impliquer d’argent.
+De cette manière, ils peuvent donner une seconde vie à des objets dont ils n’ont plus besoin, et ceux qui n’en ont pas à distribuer peuvent toujours s’impliquer en proposant leurs compétences à travers des services.
 Cette application est grandement inspirée de Leboncoin et Geev.
+
 Un système de points a été pensé pour équilibrer les échanges, garantissant que plus vous donnez, plus vous êtes en mesure de recevoir. Chaque utilisateur a un profil public qui affiche son expérience dans l’application, incluant sa date d’inscription et le nombre de transactions qu’il a conclu avec succès.
+
 Du point de vue technique, reCycle est basée sur un back-end Symfony servant d’API à des interfaces web en React.js (publique et back-office) et une interface mobile en React native. L'API REST est sécurisée par JWT.
+
 Ce dépôt contient la partie Symfony du projet.
 
 ## Fonctionnalités
