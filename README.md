@@ -2,6 +2,7 @@
 
 ## Table des matières
 - [Introduction](#introduction)
+- [Captures d'écran](#captures-d-ecran)
 - [Fonctionnalités](#fonctionnalités)
 - [Conception](#conception)
 - [Technologies](#technologies)
@@ -9,8 +10,10 @@
 - [Prérequis](#prérequis)
 - [Installation](#installation)
 
+<br>
+
 ## Introduction
-"reCycle" est une plateforme permettant aux utilisateurs d’échanger des biens et services sans impliquer d’argent.
+**reCycle** est une plateforme permettant aux utilisateurs d’échanger des biens et services sans impliquer d’argent.
 De cette manière, ils peuvent donner une seconde vie à des objets dont ils n’ont plus besoin, et ceux qui n’en ont pas à distribuer peuvent toujours s’impliquer en proposant leurs compétences à travers des services.
 Cette application est grandement inspirée de Leboncoin et Geev.
 
@@ -18,7 +21,40 @@ Un système de points a été pensé pour équilibrer les échanges, garantissan
 
 Du point de vue technique, reCycle est basée sur un back-end Symfony servant d’API à des interfaces web en React.js (publique et back-office) et une interface mobile en React native. L'API REST est sécurisée par JWT.
 
-Ce dépôt contient la partie Symfony du projet.
+Ce dépôt contient la partie back end du projet.
+
+Partie front end : https://github.com/QuevalA/recycle-front-web-share
+<br>Partie mobile : https://github.com/QuevalA/recycle-front-mobile-share
+<br>Partie back office : https://github.com/QuevalA/recycle-back-office-share
+
+<br>
+
+<h2 id="captures-d-ecran">Captures d'écran</h2>
+<p align="center">
+  <img src="readme-images/screenshot-web-categories.jpg" alt="Catégories - web" />
+  <br />
+  <em>Catégories</em>
+</p>
+<br>
+<p align="center">
+  <img src="readme-images/screenshot-web-auth.jpg" alt="Authentification - web" />
+  <br />
+  <em>Authentification</em>
+</p>
+<br>
+<p align="center">
+  <img src="readme-images/screenshot-mobile-auth.png" alt="Authentification - mobile" />
+  <br />
+  <em>Catégories</em>
+</p>
+<br>
+<p align="center">
+  <img src="readme-images/screenshot-mobile-messages.jpg" alt="Chat - mobile" />
+  <br />
+  <em>Chat</em>
+</p>
+
+<br>
 
 ## Fonctionnalités
 - *(Utilisateur)* Inscription / Connexion / Mot de passe oublié
@@ -35,24 +71,26 @@ Ce dépôt contient la partie Symfony du projet.
 - *(Administrateur)* Modérer les publications
 - *(Administrateur)* Gérer le contenu global (CRUD)
 
+<br>
+
 ## Conception
 <p align="center">
   <img src="readme-images/arborescence.jpg" alt="Arborescence" />
   <br />
   <em>Arborescence</em>
 </p>
-
+<br>
 <p align="center">
   <img src="readme-images/mld.jpg" alt="MLD" />
   <br />
   <em>Schéma de base de données</em>
 </p>
-
+<br>
 <p align="center">
   <img src="readme-images/uml_activity.jpg" alt="UML activité" />
   <br />
   <em>Diagramme d'activité - Répondre à une annonce</em>
-</p>
+</p><br>
 
 ## Technologies
 - **Symfony**: Framework PHP utilisé pour le développement de l'application web.
@@ -63,6 +101,8 @@ Ce dépôt contient la partie Symfony du projet.
 - **Node.js**: Plateforme JavaScript utilisée pour exécuter des outils de développement frontend, tels que les compilateurs de CSS et les gestionnaires de paquets.
 - **PHPMailer**: Bibliothèque PHP utilisée pour envoyer des e-mails à partir de l'application Symfony.
 - **phpMyAdmin**: Outil d'administration de base de données web utilisé pour gérer facilement la base de données MySQL.
+
+<br>
 
 ## Principales dépendances Symfony
 - **Doctrine Bundle**: Intégration de Doctrine ORM dans Symfony.
@@ -77,6 +117,8 @@ Ce dépôt contient la partie Symfony du projet.
 - **Validator Component**: Composant Symfony pour la validation des données.
 - **Routing Component**: Composant Symfony pour la gestion des routes dans l'application web.
 
+<br>
+
 ## Prérequis
 Avant de commencer l'installation et l'utilisation de ce projet, assurez-vous que votre environnement répond aux prérequis suivants :
 
@@ -85,6 +127,8 @@ Avant de commencer l'installation et l'utilisation de ce projet, assurez-vous qu
 - **Variables d'Environnement**: Avant de lancer les conteneurs Docker, assurez-vous d'avoir configuré les variables d'environnement suivantes :
   - `MYSQL_ROOT_PASSWORD`, `MYSQL_PASSWORD`, `MYSQL_USER`, `MYSQL_DATABASE`: Ces variables définissent les informations de connexion à la base de données MySQL.
   - `NODEJS_VERSION`: Version de Node.js utilisée dans le conteneur PHP.
+
+<br>
 
 ## Installation
 1. Cloner le projet en local.
